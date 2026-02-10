@@ -39,6 +39,7 @@ class BaseConfig:
     SECRET_KEY = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
     DEBUG = False
     TESTING = False
+  TESTING2 = True
     JSON_SORT_KEYS = False  # Preserve insertion order for consistent JSON output
     APP_NAME = '9Feb_3'
     APP_VERSION = '1.0.0'
