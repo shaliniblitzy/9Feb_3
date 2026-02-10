@@ -1,6 +1,7 @@
 """
 Core API blueprint module for the Flask application.
-
+"""
+Core API blueprint module for the Flask application.
 References Tech Spec §5.2.1 (Request Processing Pipeline) — this module
 provides the versioned REST API gateway endpoints. All API routes are prefixed
 with /api/v1/ to support future API versioning without breaking existing
