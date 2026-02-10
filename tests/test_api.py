@@ -11,6 +11,7 @@ Test coverage:
 - POST /api/v1/echo with empty body returns 400
 - POST /api/v1/echo with malformed JSON returns 400
 - POST /api/v1/status returns 405 Method Not Allowed
+GET /api/v1/status returns 200 with JSON containing status, service, version
 """
 
 import json
@@ -25,7 +26,7 @@ def app():
     """Create a Flask application instance configured for testing."""
     application = create_app('testing')
     return application
-
+GET /api/v1/status returns 200 with JSON containing status, service, version
 
 @pytest.fixture
 def client(app):
